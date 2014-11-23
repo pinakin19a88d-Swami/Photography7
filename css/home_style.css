@@ -296,18 +296,20 @@ body {
 		.aboutPage {
 			width: 940px;
 			height: 648px;
+			background:#d1cfcf;
 			/*background-color: #c00;*/
 		}
 		.aboutPage .pageBG {
 			width: 461px;
-			min-height: 648px;
+			height: 648px;
 			/*background: url("../images/aboutBG.jpg");*/
 			float: left;
 		}
 		.aboutPage .pageContent {
 			float: left;
-			width: 399px;
+			width: 398px;
 			background:#d1cfcf;
+			height: 588px;
 
 			padding: 30px 40px;
 		}
@@ -323,6 +325,17 @@ body {
 
 #colorbox {
 	top: 230px!important;
+}
+/* To change position of close button to Top Right Corner */
+#colorbox #cboxClose
+{
+top: 10px;
+right: 8px;
+background: url("../images/closeBtn.png") no-repeat 0 0;
+}
+#cboxLoadedContent{
+margin-top:0;
+margin-bottom:0;
 }
 /*CSS Loader Animation*/
 .cssLoader {

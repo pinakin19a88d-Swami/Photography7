@@ -45,7 +45,7 @@
 				
 				<div class="navigation">
 					<ul class="menu">
-						<li><a class="siteBody" href="javascript:void(0);">About</a></li>
+						<li><a class="siteBody ajax" href="ajax/about.html">About</a></li>
 						<li><a class="siteBody" href="javascript:void(0);">Portfolio</a></li>
 						<li><a class="siteBody" href="javascript:void(0);">Testimonials</a></li>
 						<li><a class="siteBody" href="javascript:void(0);">Contact</a></li>
@@ -60,6 +60,10 @@
 		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
 		<!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
+
+		<script>
+            jQuery('a.siteBody').colorbox();
+        </script>
 	</body>
 
 </html>

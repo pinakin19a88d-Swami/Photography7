@@ -235,7 +235,7 @@ body {
 }
 		.header {
 			position: absolute;
-			background: url("../images/headerBG.png");
+			background: url("../images/overlay.png");
 			padding: 65px 146px;
 			top: 85px;
 			left: 342px;
@@ -273,6 +273,11 @@ body {
 					color: #666;
 					text-decoration: none;
 				}
+						.aboutPage {
+							width: 940px;
+							height: 648px;
+							background-color: #c00;
+						}
 
 /*CSS Loader Animation*/
 .cssLoader {

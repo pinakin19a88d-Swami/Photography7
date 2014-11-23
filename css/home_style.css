@@ -234,50 +234,59 @@ body {
 	background: url("../images/homeBG.jpg") no-repeat;
 }
 		.header {
+			width: 516px;
 			position: absolute;
 			background: url("../images/overlay.png");
-			padding: 65px 146px;
+			padding: 65px 0 15px;
+			text-align: center;
 			top: 85px;
 			left: 342px;
 		}
 		.header h1 {
-			font-family: "AvantGarde Bk Bt";
+			font-family: "AvantGarde Bk Bt",sans-serif;
 			font-size: 27px;
 			font-weight: 100;
 			line-height: 30px;
 			letter-spacing: 2px;
 			color: #fff;
 		}
-		.header h2 {
-			font-family: "AvantGarde Bk Bt";
+		.header h6 {
+			font-family: "AvantGarde Bk Bt",sans-serif;
 			font-size: 17px;
 			font-weight: 100;
 			line-height: 20px;
 			letter-spacing: 1px;
 			color: #fff;
+			margin-bottom: 25px;
 		}
-				.navigation {
-					position: absolute;
-					bottom: 15px;
-				}
-				.navigation .menu {
-					list-style: none;
-				}
-				.navigation .menu li {
-					float: left;
-					font-family: "Century751 No2 BT";
-					font-size: 13px;
-					margin: 0px 30px 0 -14px;
-				}
-				.navigation .menu li a {
-					color: #666;
-					text-decoration: none;
-				}
-						.aboutPage {
-							width: 940px;
-							height: 648px;
-							background-color: #c00;
-						}
+		.navigation {
+		width: 240px;
+		margin: 0 auto;
+		}
+		.header ul {
+			list-style: none;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.header ul li {
+			float: left;
+			/*font-family: "Century751 No2 BT";*/
+			font-size: 13px;
+			/*margin: 0px 30px 0 -14px;*/
+			padding-left: 7px;
+		}
+		.header ul li:first-child{
+			padding-left: 0;
+		}
+		.header ul li a {
+			color: #666;
+			text-decoration: none;
+		}
+		.aboutPage {
+			width: 940px;
+			height: 648px;
+			background-color: #c00;
+		}
 
 /*CSS Loader Animation*/
 .cssLoader {

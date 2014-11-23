@@ -16,6 +16,13 @@
   clear: both;
 }
 
+div {
+	-webkit-transition: all 0.25s ease;
+	   -moz-transition: all 0.25s ease;
+		 -o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
+}
+
 a {
 	-webkit-transition: color 0.25s ease;
 	   -moz-transition: color 0.25s ease;
@@ -24,95 +31,7 @@ a {
 }
 
 /* Fonts section started*/
-@font-face {
-    font-family: 'calibriregular';
-    src: url('../fonts/calibri/calibri-webfont.eot');
-    src: url('../fonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/calibri/calibri-webfont.woff') format('woff'),
-         url('../fonts/calibri/calibri-webfont.ttf') format('truetype'),
-         url('../fonts/calibri/calibri-webfont.svg#calibriregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: 'calibribold';
-    src: url('../fonts/calibri/calibrib-webfont.eot');
-    src: url('../fonts/calibri/calibrib-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/calibri/calibrib-webfont.woff') format('woff'),
-         url('../fonts/calibri/calibrib-webfont.ttf') format('truetype'),
-         url('../fonts/calibri/calibrib-webfont.svg#calibribold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'calibriitalic';
-    src: url('../fonts/calibri/calibrii-webfont.eot');
-    src: url('../fonts/calibri/calibrii-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/calibri/calibrii-webfont.woff') format('woff'),
-         url('../fonts/calibri/calibrii-webfont.ttf') format('truetype'),
-         url('../fonts/calibri/calibrii-webfont.svg#calibriitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'calibribold_italic';
-    src: url('../fonts/calibri/calibriz-webfont.eot');
-    src: url('../fonts/calibri/calibriz-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/calibri/calibriz-webfont.woff') format('woff'),
-         url('../fonts/calibri/calibriz-webfont.ttf') format('truetype'),
-         url('../fonts/calibri/calibriz-webfont.svg#calibribold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* Calibri fonts*/
-@font-face {
-    font-family: 'ergoebold';
-    src: url('../fonts/ergoe/ergob-webfont.eot');
-    src: url('../fonts/ergoe/ergob-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ergoe/ergob-webfont.woff') format('woff'),
-         url('../fonts/ergoe/ergob-webfont.ttf') format('truetype'),
-         url('../fonts/ergoe/ergob-webfont.svg#ergoebold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'ergoeitalic';
-    src: url('../fonts/ergoe/ergoi-webfont.eot');
-    src: url('../fonts/ergoe/ergoi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ergoe/ergoi-webfont.woff') format('woff'),
-         url('../fonts/ergoe/ergoi-webfont.ttf') format('truetype'),
-         url('../fonts/ergoe/ergoi-webfont.svg#ergoeitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'ergoeregular';
-    src: url('../fonts/ergoe/ergor-webfont.eot');
-    src: url('../fonts/ergoe/ergor-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ergoe/ergor-webfont.woff') format('woff'),
-         url('../fonts/ergoe/ergor-webfont.ttf') format('truetype'),
-         url('../fonts/ergoe/ergor-webfont.svg#ergoeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'ergoebold_italic';
-    src: url('../fonts/ergoe/ergobi-webfont.eot');
-    src: url('../fonts/ergoe/ergobi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ergoe/ergobi-webfont.woff') format('woff'),
-         url('../fonts/ergoe/ergobi-webfont.ttf') format('truetype'),
-         url('../fonts/ergoe/ergobi-webfont.svg#ergoebold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 /* Fonts section end*/
 
 /* ---------- Animation Delays Section Started ---------- */
@@ -304,13 +223,56 @@ a {
 /* ---------- Animation Delays Section End ---------- */
 
 body {
-	background-color: #d1d3d4;
+	background-color: #444;
 }
 
 .container {
-	/*float: left;*/
+	position: relative;
 	margin: 0 auto;
+	width: 1200px;
+	height: 1038px;
+	background: url("../images/homeBG.jpg") no-repeat;
 }
+		.header {
+			position: absolute;
+			background: url("../images/headerBG.png");
+			padding: 65px 146px;
+			top: 85px;
+			left: 342px;
+		}
+		.header h1 {
+			font-family: "AvantGarde Bk Bt";
+			font-size: 27px;
+			font-weight: 100;
+			line-height: 30px;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+		.header h2 {
+			font-family: "AvantGarde Bk Bt";
+			font-size: 17px;
+			font-weight: 100;
+			line-height: 20px;
+			letter-spacing: 1px;
+			color: #fff;
+		}
+				.navigation {
+					position: absolute;
+					bottom: 15px;
+				}
+				.navigation .menu {
+					list-style: none;
+				}
+				.navigation .menu li {
+					float: left;
+					font-family: "Century751 No2 BT";
+					font-size: 13px;
+					margin: 0px 30px 0 -14px;
+				}
+				.navigation .menu li a {
+					color: #666;
+					text-decoration: none;
+				}
 
 /*CSS Loader Animation*/
 .cssLoader {
@@ -364,7 +326,7 @@ body {
 }
 /*CSS Loader Animation - Ends*/
 
-.no-gutter > [class*='span'] {
+/*.no-gutter > [class*='span'] {
     margin-right: 0;
     margin-left: 0;
-}
+}*/

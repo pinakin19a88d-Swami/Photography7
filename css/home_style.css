@@ -16,13 +16,6 @@
   clear: both;
 }
 
-div {
-	-webkit-transition: all 0.25s ease;
-	   -moz-transition: all 0.25s ease;
-		 -o-transition: all 0.25s ease;
-			transition: all 0.25s ease;
-}
-
 a {
 	-webkit-transition: color 0.25s ease;
 	   -moz-transition: color 0.25s ease;
@@ -31,6 +24,71 @@ a {
 }
 
 /* Fonts section started*/
+
+@font-face {
+    font-family: 'avantgarde_bk_btbook';
+    src: url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.eot');
+    src: url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.woff2') format('woff2'),
+         url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.woff') format('woff'),
+         url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.ttf') format('truetype'),
+         url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.svg#avantgarde_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'century751_no2_btroman';
+    src: url('../fonts/century751/tt1180m_-webfont.eot');
+    src: url('../fonts/century751/tt1180m_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century751/tt1180m_-webfont.woff2') format('woff2'),
+         url('../fonts/century751/tt1180m_-webfont.woff') format('woff'),
+         url('../fonts/century751/tt1180m_-webfont.ttf') format('truetype'),
+         url('../fonts/century751/tt1180m_-webfont.svg#century751_no2_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'century751_no2_btitalic';
+    src: url('../fonts/century751/tt1181m_-webfont.eot');
+    src: url('../fonts/century751/tt1181m_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century751/tt1181m_-webfont.woff2') format('woff2'),
+         url('../fonts/century751/tt1181m_-webfont.woff') format('woff'),
+         url('../fonts/century751/tt1181m_-webfont.ttf') format('truetype'),
+         url('../fonts/century751/tt1181m_-webfont.svg#century751_no2_btitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'century751_no2_btbold';
+    src: url('../fonts/century751/tt1184m_-webfont.eot');
+    src: url('../fonts/century751/tt1184m_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century751/tt1184m_-webfont.woff2') format('woff2'),
+         url('../fonts/century751/tt1184m_-webfont.woff') format('woff'),
+         url('../fonts/century751/tt1184m_-webfont.ttf') format('truetype'),
+         url('../fonts/century751/tt1184m_-webfont.svg#century751_no2_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'century751_no2_btbold_italic';
+    src: url('../fonts/century751/tt1185m_-webfont.eot');
+    src: url('../fonts/century751/tt1185m_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century751/tt1185m_-webfont.woff2') format('woff2'),
+         url('../fonts/century751/tt1185m_-webfont.woff') format('woff'),
+         url('../fonts/century751/tt1185m_-webfont.ttf') format('truetype'),
+         url('../fonts/century751/tt1185m_-webfont.svg#century751_no2_btbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* Fonts section end*/
 
@@ -222,18 +280,6 @@ a {
 
 /* ---------- Animation Delays Section End ---------- */
 
-/* Color Classes Start */
-
-.blackColor {
-	color: #000;
-}
-
-.rustColor {
-	color: #660000;
-}
-
-/* Color Classes End */
-
 body {
 	background-color: #444;
 }
@@ -253,6 +299,7 @@ body {
 			text-align: center;
 			top: 85px;
 			left: 342px;
+			z-index: 9999;
 		}
 		.header h1 {
 			font-family: "AvantGarde Bk Bt",sans-serif;
@@ -272,71 +319,127 @@ body {
 			margin-bottom: 25px;
 		}
 		.navigation {
-			width: 240px;
+			position: relative;
+			width: 275px;
+			height: 15px;
 			margin: 0 auto;
 		}
 		.header ul {
+			position: absolute;
 			list-style: none;
 			overflow: hidden;
 			margin: 0 auto;
 		}
 		.header ul li {
+			height: 30px;
 			float: left;
-			/*font-family: "Century751 No2 BT";*/
+			font-family: "Century751 No2 BT",sans-serif;
+			font-family: sans-serif;
 			font-size: 13px;
-			padding-left: 7px;
+			padding: 0 11px 0 7px;
 		}
-		.header ul li:first-child{
+		/*.header ul li:first-child{
 			padding-left: 0;
-		}
+		}*/
 		.header ul li a {
 			color: #666;
 			text-decoration: none;
 		}
-		.aboutPage {
+		.header ul li a:hover {
+			color: #aaa;
+		}
+		.aboutPage,
+		.contactPage {
 			width: 940px;
-			height: 648px;
+			height: 652px;
 			background:#d1cfcf;
 			/*background-color: #c00;*/
+			overflow: hidden;
 		}
-		.aboutPage .pageBG {
-			width: 461px;
-			height: 648px;
-			/*background: url("../images/aboutBG.jpg");*/
+		.aboutPage .pageBG,
+		.contactPage .pageBG {
+			width: 49.1%;
+			height: 652px;
+			background: #000;
 			float: left;
 		}
-		.aboutPage .pageContent {
-			float: left;
-			width: 398px;
+		.aboutPage .pageContent,
+		.contactPage .pageContent {
+			float: right;
+			width: 41%;
+			/*height: 652px;*/
 			background:#d1cfcf;
 			height: 588px;
-
 			padding: 30px 40px;
 		}
-		.aboutPage .pageContent p {
-			/*font-family: "Century751 No2 BT";*/
+		.contactPage .pageContent {
+			padding: 6% 0 0 0;
+		}
+		.aboutPage .pageContent p,
+		.contactPage .pageContent p {
+			color: #666666;
+		}
+		.aboutPage .pageContent span {
+			font-weight: bold;
+		}
+		.aboutPage .pageContent p,
+		.aboutPage .pageContent span,
+		.contactPage .pageContent p {
+			font-family: "Century751 No2 BT",sans-serif;
 			font-size: 12px;
 			font-style: italic;
 			text-indent: 30px;
 			line-height: 15px;
-			color: #666666;
 			margin-bottom: 10px;
+		}
+		.contactPage .pageContent h1 {
+			font-family: "Century751 No2 BT",sans-serif;
+			font-size: 25px;
+			font-weight: 200;
+			line-height: 35px;
+			margin: 200px 0 10px 0;
+			color: #333333;	
+		}
+		.contactPage .pageContent p {
+			font-style: normal;
 		}
 
 #colorbox {
-	top: 230px!important;
+	top: 255px!important;
 }
 /* To change position of close button to Top Right Corner */
 #colorbox #cboxClose
 {
-top: 10px;
-right: 8px;
+top: 12px;
+right: 0;
 background: url("../images/closeBtn.png") no-repeat 0 0;
 }
 #cboxLoadedContent{
 margin-top:0;
 margin-bottom:0;
 }
+#cboxTopLeft,
+#cboxTopCenter,
+#cboxTopRight {
+	display: none;
+}
+
+/* Color & Text Classes Start */
+
+.darkGreyColor {
+	color: #444;
+}
+
+.rustColor {
+	color: #880000;
+}
+
+.noIndent {
+	text-indent: 0!important;
+}
+
+/* Color & Text Classes End */
+
 /*CSS Loader Animation*/
 .cssLoader {
 	border:3px solid #fff;

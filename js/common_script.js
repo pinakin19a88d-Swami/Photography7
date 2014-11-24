@@ -22,6 +22,12 @@ $(document).ready(function(){
 	});
 
 	// currently not working as expected
+	$("#cboxClose").click(function(){
+
+		$(".header ul li").css('background','url("") no-repeat');
+		
+	});
+
 	if($("#cboxOverlay").css("display") == "none"){
 
 		$(".header ul li").css('background','url("") no-repeat');

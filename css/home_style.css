@@ -21,6 +21,8 @@ a {
 	   -moz-transition: color 0.25s ease;
 		 -o-transition: color 0.25s ease;
 			transition: color 0.25s ease;
+	color: #666;
+	text-decoration: none;
 }
 
 /* Fonts section started*/
@@ -348,6 +350,65 @@ body {
 		}
 		.header ul li a:hover {
 			color: #aaa;
+		}
+
+		.footer {
+			position: absolute;
+			width: 516px;
+			background: url("../images/overlay.png");
+			padding: 20px 0 15px;
+			text-align: center;
+			/*top: 85px;*/
+			left: 342px;
+			bottom: 0;
+			z-index: 9999;
+		}
+		.footer h6 {
+			width: 172px;
+			font-family: "Calibri";
+			font-size: 11px;
+			line-height: 12px;
+			text-align: center;
+			color: #666666;
+		}
+		.footer .socialLinks {
+			position: absolute;
+			width: 172px;
+			height: 30px;
+			bottom: 5px;
+			padding: 0 0 0 172px;
+		}
+		.footer .socialLinks ul {
+			position: absolute;
+			width: 172px;
+			height: 30px;
+		}
+		.footer .socialLinks ul > li {
+			width: 25px;
+			height: 26px;
+			float: left;
+			/*border: 1px solid #c00;*/
+		}
+		.footer .ftLeft {
+			float: left;
+		}
+		.footer .ftRight {
+			float: right;
+		}
+		.footer .socialLinks ul .fbSprite {
+			margin-left: 28px;
+			background: url("../images/fbSprite.png") no-repeat;
+			background-size: 100%;
+		}
+		.footer .socialLinks ul .gpSprite {
+			margin: 0 18px;
+			background: url("../images/gpSprite.png") no-repeat;
+			background-size: 100%;
+		}
+		.footer .socialLinks ul .liSprite {
+			margin-right: 27px;
+			background: url("../images/liSprite.png") no-repeat;
+			background-size: 100%;
 		}
 		
 		.aboutPage,

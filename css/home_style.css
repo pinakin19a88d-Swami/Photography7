@@ -27,6 +27,56 @@ a {
 
 /* Fonts section started*/
 
+	/* Calibri font Starts */
+
+@font-face {
+    font-family: 'calibriregular';
+    src: url('../fonts/calibri/calibri-webfont.eot');
+    src: url('../fonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibri-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibri-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibri-webfont.svg#calibriregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibribold';
+    src: url('../fonts/calibri/calibrib-webfont.eot');
+    src: url('../fonts/calibri/calibrib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibrib-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibrib-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibrib-webfont.svg#calibribold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibriitalic';
+    src: url('../fonts/calibri/calibrii-webfont.eot');
+    src: url('../fonts/calibri/calibrii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibrii-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibrii-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibrii-webfont.svg#calibriitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibribold_italic';
+    src: url('../fonts/calibri/calibriz-webfont.eot');
+    src: url('../fonts/calibri/calibriz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibriz-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibriz-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibriz-webfont.svg#calibribold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	/* Calibri font Ends */
+
+	/* AvantGarde font Starts */
+
 @font-face {
     font-family: 'avantgarde_bk_btbook';
     src: url('../fonts/avantgarde/avantgardeitcbybt-book-webfont.eot');
@@ -39,6 +89,10 @@ a {
     font-style: normal;
 
 }
+
+	/* AvantGarde font Ends */
+
+	/* Century751 font Starts */
 
 @font-face {
     font-family: 'century751_no2_btroman';
@@ -91,6 +145,8 @@ a {
     font-style: normal;
 
 }
+	
+	/* Century751 font Ends */
 
 /* Fonts section end*/
 

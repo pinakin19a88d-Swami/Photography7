@@ -692,11 +692,46 @@ margin-bottom:0;
 	width: 33px;
 	height: 145px;
 	background: url("../images/Photography_Sprite.png")no-repeat 0 0;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 }
-i.architectural {
+.rowOuter > a i.architectural {
 	background-position: 0 0;	
 }
-i.architectural:hover {
+.rowOuter > a i.architectural:hover {
+	background-position: -46px 0;	
+}
+.rowOuter > a i.industrialProduct {
+	background-position: 0 -145px;	
+}
+.rowOuter > a i.industrialProduct:hover {
+	background-position: -46px -145px;	
+}
+.rowOuter > a i.foodProduct {
+	background-position: 0 0;	
+}
+.rowOuter > a i.foodProduct:hover {
+	background-position: -46px 0;	
+}
+.rowOuter > a i.architectural {
+	background-position: 0 0;	
+}
+.rowOuter > a i.architectural:hover {
+	background-position: -46px 0;	
+}
+.rowOuter > a i.architectural {
+	background-position: 0 0;	
+}
+.rowOuter > a i.architectural:hover {
+	background-position: -46px 0;	
+}
+.rowOuter > a i.architectural {
+	background-position: 0 0;	
+}
+.rowOuter > a i.architectural:hover {
 	background-position: -46px 0;	
 }
 .rowWrap li {

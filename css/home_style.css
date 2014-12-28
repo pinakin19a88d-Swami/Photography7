@@ -347,8 +347,58 @@ body {
 	margin: 0 auto;
 	width: 1200px;
 	height: 1038px;
-	background: url("../images/homeBG.jpg") no-repeat;
+	/*background: url("../images/homeBG.jpg") no-repeat;*/
 }
+		.homeGallery {
+			position: absolute;
+			width: 1200px;
+			height: 1038px;
+			margin-left: 1px;
+		}
+		.homeGallery ul {
+			position: relative;
+			width: 1200px;
+			height: 173px;
+			list-style: none;
+		}
+		.homeGallery ul li {
+			position: relative;
+			float: left;
+			width: 171px;
+			height: 173px;
+			
+		}
+		.homeGallery ul li span {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0.4;
+			z-index: 50;
+			/*border: #d00 solid 2px;*/
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			    -ms-box-sizing: border-box;
+				 -o-box-sizing: border-box;
+					box-sizing: border-box;
+
+			-webkit-transition: all 0.4s ease;
+			   -moz-transition: all 0.4s ease;
+				-ms-transition: all 0.4s ease;
+				 -o-transition: all 0.4s ease;
+					transition: all 0.4s ease;
+		}
+		.homeGallery ul li span:hover {
+			border: #fff solid 34px;
+			box-shadow: 6px 6px 6px #000 inset, -6px -6px 6px #000 inset;
+			outline: 4px solid #000;
+			cursor: pointer;
+			z-index: 100;
+		}
+		.homeGallery ul li img {
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+		}
 		.header {
 			width: 516px;
 			position: absolute;

@@ -711,28 +711,34 @@ margin-bottom:0;
 	background-position: -46px -145px;	
 }
 .rowOuter > a i.foodProduct {
-	background-position: 0 0;	
+	background-position: 0 -290px;	
 }
 .rowOuter > a i.foodProduct:hover {
-	background-position: -46px 0;	
+	background-position: -46px -290px;	
 }
-.rowOuter > a i.architectural {
-	background-position: 0 0;	
+.rowOuter > a i.jwellery {
+	background-position: 0 -435px;	
 }
-.rowOuter > a i.architectural:hover {
-	background-position: -46px 0;	
+.rowOuter > a i.jwellery:hover {
+	background-position: -46px -435px;	
 }
-.rowOuter > a i.architectural {
-	background-position: 0 0;	
+.rowOuter > a i.product {
+	background-position: 0 -580px;	
 }
-.rowOuter > a i.architectural:hover {
-	background-position: -46px 0;	
+.rowOuter > a i.product:hover {
+	background-position: -46px -580px;	
 }
-.rowOuter > a i.architectural {
-	background-position: 0 0;	
+.rowOuter > a i.people {
+	background-position: 0 -727px;	
 }
-.rowOuter > a i.architectural:hover {
-	background-position: -46px 0;	
+.rowOuter > a i.people:hover {
+	background-position: -46px -727px;	
+}
+.rowOuter > a i.natureLandscape {
+	background-position: 0 -872px;	
+}
+.rowOuter > a i.natureLandscape:hover {
+	background-position: -46px -872px;	
 }
 .rowWrap li {
 	float: left;

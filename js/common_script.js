@@ -36,16 +36,12 @@ $(document).ready(function(){
 	});
 
 	// currently not working as expected
-	$("#cboxClose").click(function(){
+	if($("div").hasClass("fancybox-opened") == true){
 
+		alert("no class");
 		$(".header ul li").css('background','url("") no-repeat');
+		$(".header ul li > a").css('color','#666');
 		
-	});
-
-	if($("#cboxOverlay").css("display") == "none"){
-
-		$(".header ul li").css('background','url("") no-repeat');
-		
-	}
+	};
 
 });

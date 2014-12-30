@@ -41,7 +41,7 @@
 }
 
 .fancybox-opened {
-	z-index: 8030;
+	z-index: 9990;
 }
 
 .fancybox-opened .fancybox-skin {
@@ -52,10 +52,15 @@
 
 .fancybox-outer, .fancybox-inner {
 	position: relative;
+	background: #d1cfcf;
 }
 
 .fancybox-inner {
 	overflow: hidden;
+
+	/*user-added-properties-below*/
+	overflow: visible!important;
+	height: auto!important;
 }
 
 .fancybox-type-iframe .fancybox-inner {
@@ -111,6 +116,10 @@
 	height: 36px;
 	cursor: pointer;
 	z-index: 8040;
+
+	/*user-added-properties-below*/
+	top: 0;
+	right: 0;
 }
 
 .fancybox-nav {

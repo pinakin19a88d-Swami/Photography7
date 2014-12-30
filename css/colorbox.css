@@ -3,7 +3,7 @@
     The following CSS is consistent between example themes and should not be altered.
 */
 #colorbox{position:absolute; top:0; left:0; z-index:9999;}
-#cboxOverlay{position:absolute; top:0; left:0; z-index:9990; overflow:hidden;}
+#cboxOverlay{position:absolute; top:0; left:0; z-index:9992; overflow:hidden;}
 #cboxWrapper {position:absolute; top:0; left:0; z-index:9999; max-width:none;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
 #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
@@ -48,10 +48,10 @@
 
         #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
         /*#cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}*/
-        #cboxPrevious{position:absolute; bottom:50%; left:-8%; background:url(../images/controls_leftArrow.png) no-repeat 0 0; width:50px; height:50px; text-indent:-9999px;}
+        #cboxPrevious{position:absolute; bottom:50%; left:0; background:url(../images/controls_leftArrow.png) no-repeat 0 0; width:50px; height:50px; text-indent:-9999px;}
         #cboxPrevious:hover{background-position:0px -60px;}
         /*#cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}*/
-        #cboxNext{position:absolute; bottom:50%; right:-8%; left:auto; background:url(../images/controls_rightArrow.png) no-repeat 0 0; width:50px; height:50px; text-indent:-9999px;}
+        #cboxNext{position:absolute; bottom:50%; right:0; left:auto; background:url(../images/controls_rightArrow.png) no-repeat 0 0; width:50px; height:50px; text-indent:-9999px;}
         #cboxNext:hover{background-position:0px -60px;}
         /*#cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}*/
         #cboxClose{position:absolute; top:2%; right:1.3%; background:url(../images/controls_closeButton.png) no-repeat 0 0; width:30px; height:30px; text-indent:-9999px;}

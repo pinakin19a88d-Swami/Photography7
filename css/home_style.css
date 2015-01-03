@@ -408,7 +408,7 @@ body {
 			text-align: center;
 			top: 85px;
 			left: 342px;
-			z-index: 9999;
+			z-index: 9995;
 		}
 		.header h1 {
 			font-family: "AvantGarde Bk Bt",sans-serif;
@@ -468,7 +468,7 @@ body {
 			/*top: 85px;*/
 			left: 342px;
 			bottom: 0;
-			z-index: 9999;
+			z-index: 9985;
 		}
 		.footer h6 {
 			width: 172px;
@@ -716,10 +716,10 @@ margin-bottom:0;
 .rowOuter > a i.foodProduct:hover {
 	background-position: -46px -290px;	
 }
-.rowOuter > a i.jwellery {
+.rowOuter > a i.jewellery {
 	background-position: 0 -435px;	
 }
-.rowOuter > a i.jwellery:hover {
+.rowOuter > a i.jewellery:hover {
 	background-position: -46px -435px;	
 }
 .rowOuter > a i.product {
@@ -734,10 +734,10 @@ margin-bottom:0;
 .rowOuter > a i.people:hover {
 	background-position: -46px -727px;	
 }
-.rowOuter > a i.natureLandscape {
+.rowOuter > a i.nature {
 	background-position: 0 -872px;	
 }
-.rowOuter > a i.natureLandscape:hover {
+.rowOuter > a i.nature:hover {
 	background-position: -46px -872px;	
 }
 .rowWrap li {

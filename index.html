@@ -318,7 +318,12 @@
 					'transitionOut'	:	'elastic',
 					'speedIn'		:	600, 
 					'speedOut'		:	200, 
-					'overlayShow'	:	true
+					'overlayShow'	:	true,
+					beforeClose	:   function() {
+
+						$(".header ul li").css('background','url("") no-repeat');
+						$(".header ul li > a").css('color','#666');
+					},
 				});
 			});
         </script>

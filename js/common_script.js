@@ -35,13 +35,13 @@ $(document).ready(function(){
 
 	});
 
-	// currently not working as expected
-	if($("div").hasClass("fancybox-opened") == true){
+	// // currently not working as expected
+	// if($("div").hasClass("fancybox-opened") == true){
 
-		alert("no class");
-		$(".header ul li").css('background','url("") no-repeat');
-		$(".header ul li > a").css('color','#666');
+	// 	alert("no class");
+	// 	$(".header ul li").css('background','url("") no-repeat');
+	// 	$(".header ul li > a").css('color','#666');
 		
-	};
+	// };
 
 });

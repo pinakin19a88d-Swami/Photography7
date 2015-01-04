@@ -272,11 +272,21 @@
 				<div class="navigation">
 
 					<ul>
-						<li><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/about.html">About</a></li>
-						<li><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/portfolio.html">Portfolio</a></li>
-						<li><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="javascript:void(0);">Testimonials</a></li>
-						<li><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/contact.html">Contact</a></li>
+						<li id="aboutLink"><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/about.html">About</a></li>
+						<li id="portLink"><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/portfolio.html">Portfolio</a></li>
+						<li id="testLink"><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="javascript:void(0);">Testimonials</a></li>
+						<li id="contactLink"><a class="siteBody fancybox.ajax" data-fancybox-type="ajax" href="ajax/contact.html">Contact</a></li>
 					</ul>
+
+					<!-- <ul class="portfolioList clearfix">
+						<li id="pf1"><a href="javascript:void(0);">Architectural</a> <span></span></li>
+						<li id="pf2"><a href="javascript:void(0);">Industrial Product</a> <span></span></li>						
+						<li id="pf3"><a href="javascript:void(0);">Food Product</a> <span></span></li>
+						<li id="pf4"><a href="javascript:void(0);">Jewellery</a> <span></span></li>
+						<li id="pf5"><a href="javascript:void(0);">Product</a> <span></span></li>
+						<li id="pf6"><a href="javascript:void(0);">People</a> <span></span></li>
+						<li id="pf7"><a href="javascript:void(0);">Nature &amp; Landscape</a></li>
+				    </ul> -->
 
 				</div><!-- navigation -->
 
@@ -319,14 +329,21 @@
 					'speedIn'		:	600, 
 					'speedOut'		:	200, 
 					'overlayShow'	:	true,
-					beforeClose	:   function() {
+					'autoResize'	: true,
+					'autoCenter'	: true,
+					'beforeClose'	: function(){
+						
+						$(".header ul li").removeClass("activeNav");
 
-						$(".header ul li").css('background','url("") no-repeat');
-						$(".header ul li > a").css('color','#666');
 					},
+					// 'afterLoad'	: function(){
+					// 	alert(clickedObj);
+					// 	clickedObj.addClass("activeNav");
+					// }
 				});
 			});
         </script>
+
 	</body>
 
 </html>

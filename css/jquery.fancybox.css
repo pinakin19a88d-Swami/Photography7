@@ -167,7 +167,7 @@
 	visibility: visible;
 }
 
-.fancybox-tmp {
+/*.fancybox-tmp {
 	position: absolute;
 	top: -99999px;
 	left: -99999px;
@@ -175,7 +175,7 @@
 	max-width: 99999px;
 	max-height: 99999px;
 	overflow: visible !important;
-}
+}*/
 
 /* Overlay helper */
 

@@ -21,8 +21,12 @@
 .pull-right {
 	float: right!important;
 }
-
-
+.text-center {
+	text-align: center;
+}
+.topSpace5 {
+	margin-top: 20px;
+}
 a {
 	-webkit-transition: color 0.25s ease;
 	   -moz-transition: color 0.25s ease;

@@ -2,7 +2,7 @@
 	<div class="pageContent rowWrap">
 
 		<div class="row1Architect rowOuter clearfix animated fadeInUp de4ms">			
-			<a href="#"><i class="architectural"></i></a>
+			<a href="#" id="architecturalBtn"><i class="architectural"></i></a>
 			
 	        <span id="prevArchitect" class="pull-left prevBtn">&lt;</span>
 	        <span id="nextArchitect" class="pull-right nextBtn"> &gt;</span>    		
@@ -16,7 +16,7 @@
 
 				<ul class="clearfix">
 					<li>						
-						<a href="images/portfolio_images/architectural/large_view/1_architectural_large.jpg" class="gallery1">
+						<a href="images/portfolio_images/architectural/large_view/1_architectural_large.jpg" class="gallery1" id="g1fe">
 							<span></span>
 							<img src="images/portfolio_images/architectural/thumb_view/1_architectural.jpg" alt="Architectural image 1">
 						</a>
@@ -812,9 +812,16 @@
         jQuery('a.gallery5').colorbox({rel:'gallery5'});
         jQuery('a.gallery6').colorbox({rel:'gallery6'});
         jQuery('a.gallery7').colorbox({rel:'gallery7'});
+
+		// $("#architecturalBtn").click(function(){
+
+		// 	$( "#g1fe" ).trigger( "click" );
+
+		// });
     </script>
     <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/portfolio_menu_script.js"></script>
 
 
 </div><!-- portfolioPage -->

@@ -450,20 +450,32 @@ body {
 		}
 		.portfolioList {
 			position: absolute;
-			width: 100%;
-			height: 15px;
+			display: block;
+			width: 901px;
+			height: 30px;
 			background-color: #000;
-			margin-top: 50px;
+			z-index: -1;
+			margin: -30px 0%;
+			top: 0;
+			padding-left: 25px;
+			list-style: none;
+		}
+		.portfolioList > li {
+			float: left;
+			margin: 4px 10px;
 		}
 		.portfolioList > li > a {
-			color: #666;
+			color: #999;
+		}
+		.portfolioList > li > a:hover {
+			color: #fff;
 		}
 		.portfolioList > li > span {
 			display: inline-block;
 			width: 2px;
 			height: 8px;
 			background: #767465;
-			margin-top: -11px;
+			margin: 0 0 0 15px;
 		}
 		.header ul {
 			position: absolute;
@@ -624,6 +636,9 @@ margin-bottom:0;
 #cboxTopCenter,
 #cboxTopRight {
 	display: none;
+}
+.cboxElement {
+	display: inline-block;
 }
 
 /* Color & Text Classes Start */

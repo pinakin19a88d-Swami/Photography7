@@ -31,7 +31,7 @@
     #cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
     #cboxTopCenter{height:16px; margin-top: 5px; background:url(../images/border.png) 0 -5px repeat-x;}
     #cboxBottomCenter{height:16px; background:url(../images/border.png) 0 -29px repeat-x;}
-    #cboxContent{background:#fff;/* overflow:hidden;*/}
+    #cboxContent{background:#fff;/* overflow:hidden;*/margin-top: 30px;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:28px;}

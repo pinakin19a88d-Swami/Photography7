@@ -840,6 +840,9 @@ margin-bottom:0;
 .activeNav a {
 	color: #c00!important;
 }
+.activeGal a {
+	color: #c00!important;
+}
 .prevBtn, .nextBtn {
 	position: absolute;
 	top: 35px;

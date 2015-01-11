@@ -570,16 +570,20 @@ body {
 		.testimonialPage {
 			width: 940px;
 			/*height: 652px;*/
+			max-height: 652px;
 			background:#d1cfcf;
 			/*background-color: #c00;*/
 			overflow: auto;
 		}
 		.aboutPage .pageBG,
 		.contactPage .pageBG {
-			width: 49.1%;
+			width: 50%;
 			height: 652px;
 			background: #000;
 			float: left;
+		}
+		.pageBG img {
+			width: 450px;
 		}
 		.aboutPage .pageContent,
 		.contactPage .pageContent {
@@ -623,7 +627,7 @@ body {
 		}
 
 #colorbox {
-	top: 225px!important;
+	top: 255px!important;
 }
 /* To change position of close button to Top Right Corner */
 #colorbox #cboxClose

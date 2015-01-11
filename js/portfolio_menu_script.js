@@ -78,4 +78,69 @@ $(document).ready(function(){
 
 	});
 
+	var childObj;
+
+	$(".cycle-slideshow").hover(function(){
+		
+		var hoveredObj = $(this).parent();
+
+		// $(hoveredObj).children()[0].children()[0].css("background-position","-46px 0");
+		
+		childObj = $(hoveredObj).children()[0];
+
+		var valueToChange;
+		if($( childObj ).children("i").hasClass("architectural")){
+			valueToChange = "-46px 0";
+		}
+		if($( childObj ).children("i").hasClass("industrialProduct")){
+			valueToChange = "-46px -145px";
+		}
+		if($( childObj ).children("i").hasClass("foodProduct")){
+			valueToChange = "-46px -290px";
+		}
+		if($( childObj ).children("i").hasClass("jewellery")){
+			valueToChange = "-46px -435px";
+		}
+		if($( childObj ).children("i").hasClass("product")){
+			valueToChange = "-46px -580px";
+		}
+		if($( childObj ).children("i").hasClass("people")){
+			valueToChange = "-46px -727px";
+		}
+		if($( childObj ).children("i").hasClass("nature")){
+			valueToChange = "-46px -872px";
+		}
+
+		$( childObj ).children("i").css("background-position",valueToChange);
+
+	},
+	function(){
+
+		var valueToChange;
+		if($( childObj ).children("i").hasClass("architectural")){
+			valueToChange = "0 0";
+		}
+		if($( childObj ).children("i").hasClass("industrialProduct")){
+			valueToChange = "0 -145px";
+		}
+		if($( childObj ).children("i").hasClass("foodProduct")){
+			valueToChange = "0 -290px";
+		}
+		if($( childObj ).children("i").hasClass("jewellery")){
+			valueToChange = "0 -435px";
+		}
+		if($( childObj ).children("i").hasClass("product")){
+			valueToChange = "0 -580px";
+		}
+		if($( childObj ).children("i").hasClass("people")){
+			valueToChange = "0 -727px";
+		}
+		if($( childObj ).children("i").hasClass("nature")){
+			valueToChange = "0 -872px";
+		}
+
+		$( childObj ).children("i").css("background-position",valueToChange);
+
+	});
+
 });

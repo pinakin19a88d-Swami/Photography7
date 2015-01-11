@@ -823,6 +823,19 @@
     <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
     <script type="text/javascript" src="js/portfolio_menu_script.js"></script>
 
+    <script type="text/javascript">
+
+	$(document).ready(function(){
+
+		var windowHeight = $(window).height();
+		var newFancyboxHeight = (windowHeight - 255) - 40;
+
+		$(".portfolioPage").css("height",newFancyboxHeight);
+
+	});
+
+	</script>
+
 
 </div><!-- portfolioPage -->
 

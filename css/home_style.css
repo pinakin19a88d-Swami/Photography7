@@ -566,12 +566,13 @@ body {
 		}
 		
 		.aboutPage,
-		.contactPage {
+		.contactPage,
+		.testimonialPage {
 			width: 940px;
-			height: 652px;
+			/*height: 652px;*/
 			background:#d1cfcf;
 			/*background-color: #c00;*/
-			overflow: hidden;
+			overflow: auto;
 		}
 		.aboutPage .pageBG,
 		.contactPage .pageBG {
@@ -724,7 +725,7 @@ margin-bottom:0;
 .portfolioPage .pageContent {
 	padding: 30px 0 0;
 	/*min-height: 1035px;*/
-	max-height: 437px;
+	height: 95.4%;
 	overflow: auto;
 }
 .rowWrap ul {

@@ -26,4 +26,10 @@ $(document).ready(function(){
 
 	});
 
+	$( window ).resize(function() {
+	  
+	  $.fancybox.reposition();
+
+	});
+
 });

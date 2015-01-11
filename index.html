@@ -393,16 +393,30 @@
 					'overlayShow'	:	true,
 					'autoResize'	: 	true,
 					'autoCenter'	: 	true,
+					'beforeLoad'	: function(){
+						$("body").css("overflow","hidden");
+					},
 					'beforeClose'	: 	function(){
 						
 						$(".header ul li").removeClass("activeNav");
+						$("body").css("overflow","auto");
 
 					},
+					// 'afterClose'        : function () { 
+			  //           parent.location.reload(true);
+			  //       }
 					// 'afterLoad'	: function(){
 					// 	alert(clickedObj);
 					// 	clickedObj.addClass("activeNav");
 					// }
 				});
+			});
+
+			var popupParent = jQuery(".portfolioPage").parent();
+			jQuery(document).on('fancybox-cleanup', function() {
+				
+				popupParent.find('.fancybox-inlinetmp').replaceWith(jQuery(".portfolioPage"));
+
 			});
         </script>
 

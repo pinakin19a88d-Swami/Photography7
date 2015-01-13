@@ -1,91 +1,188 @@
 $(document).ready(function(){
 
+	var fbFlag = false;
 	$(".cboxElement").click(function(){
 
-		 $(".portfolioList").remove();
- 		 $("#cboxContent").append('<ul class="portfolioList clearfix animated fadeInUp de6ms"><li id="pf1"><a href="javascript:void(0);">Architectural</a><span></span></li><li id="pf2"><a href="javascript:void(0);">Industrial Product</a><span></span></li><li id="pf3"><a href="javascript:void(0);">Food Product</a><span></span></li><li id="pf4"><a href="javascript:void(0);">Jewellery</a><span></span></li><li id="pf5"><a href="javascript:void(0);">Product</a><span></span></li><li id="pf6"><a href="javascript:void(0);">People</a><span></span></li><li id="pf7"><a href="javascript:void(0);">Nature &amp; Landscape</a></li></ul>');
+		 fbFlag = false;
+ 		 if( $("div").hasClass("fancybox-wrap") ) {
+ 		 	fbFlag = true;
+ 		 }
 
- 		$("#pf1").click(function(){
-			$("a.home_gallery1").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+ 		 if(!fbFlag) {
+		 	$(".portfolioList1").remove();
+		 	$(".portfolioList2").remove();
+		 	// alert("no FB");
+ 		 	$("#cboxContent").append('<ul class="portfolioList1 pfList clearfix animated fadeInUp de6ms"><li id="pf1_1"><a href="javascript:void(0);">Architectural</a><span></span></li><li id="pf1_2"><a href="javascript:void(0);">Industrial Product</a><span></span></li><li id="pf1_3"><a href="javascript:void(0);">Food Product</a><span></span></li><li id="pf1_4"><a href="javascript:void(0);">Jewellery</a><span></span></li><li id="pf1_5"><a href="javascript:void(0);">Product</a><span></span></li><li id="pf1_6"><a href="javascript:void(0);">People</a><span></span></li><li id="pf1_7"><a href="javascript:void(0);">Nature &amp; Landscape</a></li></ul>');
+ 		 }
+
+		if(fbFlag) {
+			$(".portfolioList1").remove();
+			$(".portfolioList2").remove();
+			// alert("yes FB");
+ 		 	$("#cboxContent").append('<ul class="portfolioList2 pfList clearfix animated fadeInUp de6ms"><li id="pf2_1"><a href="javascript:void(0);">Architectural</a><span></span></li><li id="pf2_2"><a href="javascript:void(0);">Industrial Product</a><span></span></li><li id="pf2_3"><a href="javascript:void(0);">Food Product</a><span></span></li><li id="pf2_4"><a href="javascript:void(0);">Jewellery</a><span></span></li><li id="pf2_5"><a href="javascript:void(0);">Product</a><span></span></li><li id="pf2_6"><a href="javascript:void(0);">People</a><span></span></li><li id="pf2_7"><a href="javascript:void(0);">Nature &amp; Landscape</a></li></ul>');
+		}
+
+ 		$("#pf1_1").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery1").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_1").addClass("activeGal");
 		});
-		$("#pf2").click(function(){
-			$("a.home_gallery2").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_2").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery2").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_2").addClass("activeGal");
 		});
-		$("#pf3").click(function(){
-			$("a.home_gallery3").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_3").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery3").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_3").addClass("activeGal");
 		});
-		$("#pf4").click(function(){
-			$("a.home_gallery4").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_4").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery4").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_4").addClass("activeGal");
 		});
-		$("#pf5").click(function(){
-			$("a.home_gallery5").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_5").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery5").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_5").addClass("activeGal");
 		});
-		$("#pf6").click(function(){
-			$("a.home_gallery6").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_6").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery6").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_6").addClass("activeGal");
 		});
-		$("#pf7").click(function(){
-			$("a.home_gallery7").colorbox({open:true});
-			$(".portfolioList > li").removeClass("activeGal");
-			$(this).addClass("activeGal");
+		$("#pf1_7").click(function(){
+			if(!fbFlag) {
+				$("a.home_gallery7").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf1_7").addClass("activeGal");
+		});
+
+		// List 2
+
+		$("#pf2_1").click(function(){
+			if(fbFlag) {
+				$("a.gallery1").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_1").addClass("activeGal");
+		});
+		$("#pf2_2").click(function(){
+			if(fbFlag) {
+				$("a.gallery2").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_2").addClass("activeGal");
+		});
+		$("#pf2_3").click(function(){
+			if(fbFlag) {
+				$("a.gallery3").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_3").addClass("activeGal");
+		});
+		$("#pf2_4").click(function(){
+			if(fbFlag) {
+				$("a.gallery4").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_4").addClass("activeGal");
+		});
+		$("#pf2_5").click(function(){
+			if(fbFlag) {
+				$("a.gallery5").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_5").addClass("activeGal");
+		});
+		$("#pf2_6").click(function(){
+			if(fbFlag) {
+				$("a.gallery6").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_6").addClass("activeGal");
+		});
+		$("#pf2_7").click(function(){
+			if(fbFlag) {
+				$("a.gallery7").colorbox({open:true});
+			}
+
+			$(".pfList > li").removeClass("activeGal");
+			$("#pf2_7").addClass("activeGal");
 		});
 
  		var galNum;
- 		if(	$(this).hasClass("home_gallery1") ){
+ 		if(	$(this).hasClass("home_gallery1") || $(this).hasClass("gallery1") ){
  			galNum = 1;
  		}
- 		if(	$(this).hasClass("home_gallery2") ){
+ 		if(	$(this).hasClass("home_gallery2") || $(this).hasClass("gallery2") ){
  			galNum = 2;
  		}
- 		if(	$(this).hasClass("home_gallery3") ){
+ 		if(	$(this).hasClass("home_gallery3") || $(this).hasClass("gallery3") ){
  			galNum = 3;
  		}
- 		if(	$(this).hasClass("home_gallery4") ){
+ 		if(	$(this).hasClass("home_gallery4") || $(this).hasClass("gallery4") ){
  			galNum = 4;
  		}
- 		if(	$(this).hasClass("home_gallery5") ){
+ 		if(	$(this).hasClass("home_gallery5") || $(this).hasClass("gallery5") ){
  			galNum = 5;
  		}
- 		if(	$(this).hasClass("home_gallery6") ){
+ 		if(	$(this).hasClass("home_gallery6") || $(this).hasClass("gallery6") ){
  			galNum = 6;
  		}
- 		if(	$(this).hasClass("home_gallery7") ){
+ 		if(	$(this).hasClass("home_gallery7") || $(this).hasClass("gallery7") ){
  			galNum = 7;
  		}
 
- 		$(".portfolioList > li").removeClass("activeGal");
+ 		$(".pfList > li").removeClass("activeGal");
  		switch(galNum){
 
- 			case 1: $("#pf1").addClass("activeGal");
+ 			case 1: $("#pf1_1, #pf2_1").addClass("activeGal");
  					break;
 
- 			case 2: $("#pf2").addClass("activeGal");
+ 			case 2: $("#pf1_2, #pf2_2").addClass("activeGal");
  					break;
 
- 			case 3: $("#pf3").addClass("activeGal");
+ 			case 3: $("#pf1_3, #pf2_3").addClass("activeGal");
  					break;
 
- 			case 4: $("#pf4").addClass("activeGal");
+ 			case 4: $("#pf1_4, #pf2_4").addClass("activeGal");
  					break;
 
- 			case 5: $("#pf5").addClass("activeGal");
+ 			case 5: $("#pf1_5, #pf2_5").addClass("activeGal");
  					break;
 
- 			case 6: $("#pf6").addClass("activeGal");
+ 			case 6: $("#pf1_6, #pf2_6").addClass("activeGal");
  					break;
 
- 			case 7: $("#pf7").addClass("activeGal");
+ 			case 7: $("#pf1_7, #pf2_7").addClass("activeGal");
  					break;
 
  		}
@@ -98,8 +195,6 @@ $(document).ready(function(){
 		
 		var hoveredObj = $(this).parent();
 
-		// $(hoveredObj).children()[0].children()[0].css("background-position","-46px 0");
-		
 		childObj = $(hoveredObj).children()[0];
 
 		var valueToChange;

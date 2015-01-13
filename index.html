@@ -317,6 +317,21 @@
 					<a class="home_gallery1" href="images/portfolio_images/architectural/large_view/6_architectural_large.jpg"></a>
 				</div>
 
+				<div><!-- gallery2 -->
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/1_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/2_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/3_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/4_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/5_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/6_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/7_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/8_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/9_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/10_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/11_industrial_large.jpg"></a>
+					<a class="home_gallery2" href="images/portfolio_images/industrial/large_view/12_industrial_large.jpg"></a>
+				</div>
+
 				<div><!-- gallery3 -->
 					<a class="home_gallery3" href="images/portfolio_images/food/large_view/1_food_large.jpg"></a>
 					<a class="home_gallery3" href="images/portfolio_images/food/large_view/3_food_large.jpg"></a>
@@ -378,6 +393,7 @@
 		<script type="text/javascript">
             jQuery('a.home_gallery').colorbox();
             jQuery('a.home_gallery1').colorbox({rel:'home_gallery1'});
+            jQuery('a.home_gallery2').colorbox({rel:'home_gallery2'});
             jQuery('a.home_gallery3').colorbox({rel:'home_gallery3'});
             jQuery('a.home_gallery4').colorbox({rel:'home_gallery4'});
             jQuery('a.home_gallery5').colorbox({rel:'home_gallery5'});
@@ -412,12 +428,12 @@
 				});
 			});
 
-			var popupParent = jQuery(".portfolioPage").parent();
-			jQuery(document).on('fancybox-cleanup', function() {
+			// var popupParent = jQuery(".portfolioPage").parent();
+			// jQuery(document).on('fancybox-cleanup', function() {
 				
-				popupParent.find('.fancybox-inlinetmp').replaceWith(jQuery(".portfolioPage"));
+			// 	popupParent.find('.fancybox-inlinetmp').replaceWith(jQuery(".portfolioPage"));
 
-			});
+			// });
         </script>
 
 	</body>

@@ -26,10 +26,10 @@ $(document).ready(function(){
 
 	});
 
-	$( window ).resize(function() {
+	// $( window ).resize(function() {
 	  
-	  $.fancybox.reposition();
+	//   $.fancybox.reposition();
 
-	});
+	// });
 
 });

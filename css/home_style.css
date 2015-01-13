@@ -451,7 +451,7 @@ body {
 			height: 15px;
 			margin: 0 auto;
 		}
-		.portfolioList {
+		.pfList {
 			position: absolute;
 			display: block;
 			width: 901px;
@@ -463,17 +463,17 @@ body {
 			padding-left: 25px;
 			list-style: none;
 		}
-		.portfolioList > li {
+		.pfList > li {
 			float: left;
 			margin: 4px 10px;
 		}
-		.portfolioList > li > a {
+		.pfList > li > a {
 			color: #999;
 		}
-		.portfolioList > li > a:hover {
+		.pfList > li > a:hover {
 			color: #fff;
 		}
-		.portfolioList > li > span {
+		.pfList > li > span {
 			display: inline-block;
 			width: 2px;
 			height: 8px;

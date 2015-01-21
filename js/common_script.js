@@ -33,3 +33,12 @@ $(document).ready(function(){
 	// });
 
 });
+
+$(window).load(function() {
+		// Animate loader off screen
+
+		$( ".container" ).removeClass( "loading" );
+		$( ".container" ).css("left","0");
+		$( ".container" ).css("opacity","1");
+		$( ".loader_cont" ).remove();
+	});
